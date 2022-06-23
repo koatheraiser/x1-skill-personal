@@ -23,6 +23,10 @@ class PersonalSkill(MycroftSkill):
     @intent_handler("WhereWereYouBorn.intent")
     def handle_where_were_you_born_intent(self, message):
         self.speak_dialog("where.was.i.born")
+    
+    @intent_handler("Gender.intent")
+    def handle_gender_intent(self, message):
+        self.speak_dialog("gender")
 
     @intent_handler("WhoMadeYou.intent")
     def handle_who_made_you_intent(self, message):
